@@ -1,13 +1,169 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 400px;
+  align-items: center;
+  background-color: #f8f9f9;
+  padding:10px;
+}
+
+.listsection,
+.addsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.addsection {
+  display: none;
+}
+
+.container>p {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 165px;
+}
+
+.filterssection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+  min-height: 265px;
+  width:365px;
+  gap: 10px;
+  padding:10px;
+  border: 1px solid black;
+}
+
+.doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgb(204, 214, 220);
+  text-align: center;
+  height: 90px;
+  width: 105px;
+  padding: 10px;
+}
+
+.doctor>img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.expert {
+  font-size: 8px;
+}
+
+.rating {
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.add {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.adddoc {
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.profileedit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formeditsection>input {
+  width: 340px;
+  height: 30px;
+}
+
+.profilephoto>input {
+  width: 300px;
+}
+
+.profilephoto {
+  width: 340px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 340px;
+}
+.arrow{
+  width:120px;
+}
+.arrow>p {
+  width:25px;
+  border:1px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+.arrow>p:hover{
+  background-color: gainsboro;
 }
